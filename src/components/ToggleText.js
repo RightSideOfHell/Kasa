@@ -6,7 +6,7 @@ import upArrow from '../assets/upArrow.png'
 
 
 export default function ShowHide({ title, content }) {
-    const [showText, setShowText] = useState(false);
+    const [showText, setShowText] = useState(true);
 
     return(
         <div className="toggle">
@@ -17,9 +17,6 @@ export default function ShowHide({ title, content }) {
                 } />
             </div>
             {showText && <p className="toggle-content">{ content }</p>}
-
-
-
         </div>
     );
 }
