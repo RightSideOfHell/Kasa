@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+/* Import de normalize */
+@import './normalize.css';
+
+/* Import de Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Pages */
+@import './pages/Home.css';
+@import './pages/About.css';
+@import './pages/ErrorPage.css';
+@import './pages/Lodging.css';
+
+/* Components */
+@import './components/header.css';
+@import './components/footer.css';
+@import '../style/components/banner.css';
+
+/*  ---------------------------------------------------------- */
+/* -------------------- Global CSS styles -------------------- */
+/*  ---------------------------------------------------------- */
+body{
+  background: #ffffff;
+}
+
+.root-layout{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
+  width: 86%;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (max-width: 700px) {
+  .root-layout{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 90%;
+  }
 }

@@ -1,11 +1,13 @@
-import '../style/App.css';
+import '../style/pages/Home.css'
+import BannerLayout from '../components/HomeBannerLayout'
+import List from '../components/CardList';
 
-function Home() {
+export default function Home() {
   return (
-    <div className="App">
-      <p>Hello World</p>
-    </div>
+    <div className="home-main">
+      <BannerLayout />
+      <List />
+      </div>
+  
   );
 }
-
-export default Home;

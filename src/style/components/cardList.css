@@ -1,0 +1,13 @@
+.list-home{
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+    .list-home{
+        border-radius: 10px;
+        padding: 10px;
+        background: #ffffff;
+    }
+}

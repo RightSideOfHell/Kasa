@@ -1,0 +1,50 @@
+.apt-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.apt-card-div{
+    padding: 1%
+}
+
+.card{
+    position: relative;
+    padding: 1%;
+    flex-grow: 1;
+    width: fit-content;
+}
+
+.card-img{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    
+}
+
+.card-title{
+    position: absolute;
+    top: 75%;
+    left: 4%;
+    width: 96%;
+    font-size: 18px;
+    color: white;
+
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .card-img{
+        border-radius: 20px;
+        padding: 10px;
+        width: 335px;
+        height: 255px;
+    }
+    .card-title{
+        top: 62%;
+        width: 60%;
+        left: 10%;
+    }
+}

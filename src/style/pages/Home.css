@@ -1,0 +1,40 @@
+/* ------------------------- Home Banner with its text ------------------------- */
+.home-banner {filter: brightness(70%);}
+
+.home-banner-text {
+    position: absolute;
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 48px;
+    flex-wrap: wrap;
+    top: 35%;
+    width: 100%;    
+}
+
+.home-banner-text1{
+   margin: 0;
+}
+
+.home-banner-text2{
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .home-banner {
+        text-align: start;   
+    }
+    .home-banner-text {
+        flex-direction: column;
+        top: 35%;
+        font-size: 24px; 
+    
+    }
+    .home-banner-text1{
+        padding-left: 5%;
+    }
+    .home-banner-text2{
+        padding-left: 5%;
+    }
+}

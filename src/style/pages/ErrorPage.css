@@ -1,0 +1,54 @@
+:root {
+    --primary: #FF6060;
+}
+
+a {
+    color: var(--primary);
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.error-div {
+   text-align: center;
+   
+}
+
+.error-404 {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 288px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.error-msg {
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Note to self: starting from 540px the body starts shrinking */
+@media only screen and (max-width: 700px){
+    .error-div{
+        width: 70%;
+        margin: auto;
+    }
+    .error-404{
+        font-size: 96px;   
+    }
+    .error-msg{
+        font-size: 18px; 
+        margin-bottom: 10%;
+        display: flex; 
+        flex-direction: column;   
+    }
+    .error-link{
+        font-size: 14px;
+    }
+}
