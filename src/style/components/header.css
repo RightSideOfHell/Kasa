@@ -1,6 +1,7 @@
 .header-layout {
     display: flex;
     margin: auto;
+    margin-top: 40px;
     width: 100%;
     margin-bottom: 50px;
     justify-content: space-between;

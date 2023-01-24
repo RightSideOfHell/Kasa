@@ -6,17 +6,23 @@ import upArrow from '../assets/upArrow.png'
 
 
 export default function ShowHide({ title, content }) {
-    const [showText, setShowText] = useState(true);
+    const [showText, setShowText] = useState(false);
 
     return(
         <div className="toggle">
             <div className="toggle-bar">
-                <h3 className="toggle-title">{title}</h3>
-                <img src={downArrow} alt="flèche du bas" className="downArrow" onClick={() =>
-                setShowText(!showText)
-                } />
+                <h2 className="toggle-title">{ title }</h2>
+                <div className="toggle-animation" onClick={() =>
+                    setShowText(!showText)}>
+                    {showText ? (
+                        <img src={ upArrow } alt="flèche du haut" className="arrow" />
+                    ) :
+                        (<img src={ downArrow } alt="flèche du bas" className="arrow" />
+                    )}
+                </div>                
             </div>
-            {showText && <p className="toggle-content">{ content }</p>}
+            {showText && 
+            <div className="toggle-content description_content">{ content }</div>}
         </div>
     );
 }

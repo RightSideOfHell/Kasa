@@ -1,0 +1,134 @@
+.apt_preview{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* ------------------------- LEFT SIDE ------------------------- */
+.apt_preview_left{
+    margin-right: 10px;
+}
+.preview_title{
+    margin: 0;
+}
+
+/* ------------------------- RIGHT SIDE ------------------------- */
+.description_owner{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.owners_name{
+    font-size: 18px;
+    text-align: right;
+}
+.owners_pic{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.ratingStars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------- TAGS ------------------------- */
+.apt_tags{
+    width: fit-content;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.tag{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    text-align: center;
+}
+
+/* ------------------------- TOGGLE CARDS ------------------------- */
+.card_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card_content_right,
+.card_content_left{
+    width: 45%;
+}
+.description_content{
+    font-size: 18px;
+}
+
+.equipement_list{
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .apt_preview{
+        flex-direction: column;
+    }
+    .apt_preview_right{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: ;
+        margin-top: 20px;
+    }
+    .description_owner{
+        margin-bottom: 0;
+    }
+    .owners_name{
+        font-size: 15px
+    }
+    .owners_pic{
+        align-self: center;
+        width: 32px;
+        height: 32px;
+    }
+    .ratingStars{
+        gap: 8px;
+    }
+    .star{
+        width: 15px;
+    }
+    .preview_title{
+        font-size: 18px;
+    }
+    .preview-location{
+        font-size: 14px;
+    }
+
+    /* ------------------------- TAGS ------------------------- */
+    .apt_tags{
+        width: 100%;
+        margin: 0;
+        gap: 5px;
+    }
+    .tag{
+        width: 84px;
+        font-size: 10px;
+    }
+    
+    .card_content{
+        display: block;
+    }
+    .card_content_right,
+    .card_content_left{
+        width: 100%;
+    }
+    .equipement_list{
+        font-size: 12px;
+    }
+}

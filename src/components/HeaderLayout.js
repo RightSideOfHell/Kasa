@@ -8,7 +8,7 @@ export default function RootLayout() {
     return (
         <div className="root-layout">
             <header className="header-layout">
-                <img src={logo} alt='logo Kasa' className="logo" />
+                <img src={ logo } alt='logo Kasa' className="logo" />
                 <nav className="header-nav-bar">
                     <NavLink to="/">Accueil</NavLink>
                     <NavLink to="about" className="aboutShrink">A Propos</NavLink>

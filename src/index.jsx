@@ -4,7 +4,7 @@ import './style/index.css';
 
 //pages
 import Home from './pages/Home';
-// import Lodging, { lodgingDetails } from './pages/Lodging';
+import Lodging from './pages/Lodging';
 import About from './pages/About';
 import Error from './pages/ErrorPage'
 
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
         <Route path ="/" element={<HeaderLayout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          {/* <Route path='lodging/:id' element={<Lodging />} loader={lodgingDetails} /> */}
+          <Route path='lodging/:id' element={<Lodging />} />
           
           <Route path="*" element={<Error />} />
         </Route>
