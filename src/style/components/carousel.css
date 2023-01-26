@@ -50,6 +50,9 @@
 .carousel_arrow_right{
     right: 40px;
 }
+.carousel_arrow_none{
+    display: none;
+}
 .carousel_pagination{
     position: absolute;
     bottom: 10px;

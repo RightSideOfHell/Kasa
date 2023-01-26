@@ -66,7 +66,7 @@
     font-size: 18px;
 }
 
-.equipement_list{
+.lodging_content{
     margin-top: 0;
     margin-bottom: 7px;
     font-size: 18px;
@@ -128,7 +128,7 @@
     .card_content_left{
         width: 100%;
     }
-    .equipement_list{
+    .lodging_content{
         font-size: 12px;
     }
 }

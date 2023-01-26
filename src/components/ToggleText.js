@@ -22,7 +22,7 @@ export default function ShowHide({ title, content }) {
                 </div>                
             </div>
             {showText && 
-            <div className="toggle-content description_content">{ content }</div>}
+            <div className="toggle-content">{ content }</div>}
         </div>
     );
 }

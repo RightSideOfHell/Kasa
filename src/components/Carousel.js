@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import '../style/components/carousel.css'
 import leftArrow from '../assets/leftArrow.png'
 import rightArrow from '../assets/rightArrow.png'
@@ -39,8 +39,8 @@ export default function Carousel () {
                     }
                 )}
             </div>
-            <img src={ leftArrow } alt='left arrow' className="carousel_arrow_left" onClick={ slideLeft }/>
-            <img src={ rightArrow } alt='right arrow' className="carousel_arrow_right" onClick={ slideRight }/>
+            <img src={ leftArrow } alt='left arrow' className={ apt.pictures.length < 2 ? "carousel_arrow_none" : "carousel_arrow_left" } onClick={ slideLeft }/>
+            <img src={ rightArrow } alt='right arrow' className={ apt.pictures.length < 2 ? "carousel_arrow_none" : "carousel_arrow_right" } onClick={ slideRight }/>
             <div className='carousel_pagination'>
                 <p>{ current + 1 }/{ apt.pictures.length }</p>
             </div>

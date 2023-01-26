@@ -7,8 +7,8 @@
 .toggle_list{
     width: 83%;
     margin: auto;
- }
- 
+}
+
 .toggle{
     margin: auto;
     display: flex;
@@ -59,7 +59,10 @@
 
     animation: slideUp .9s forwards;
 }
-
+.lodging_toggle{
+    font-size: 18px;
+    margin: 0;
+}
 
 @keyframes slideUp {
     from {
@@ -79,6 +82,7 @@
     }
     .toggle{
         width: 100%;
+        margin-bottom: 20px;
     }
     .toggle-bar{
         height: 30px;
@@ -88,6 +92,9 @@
     }
     .toggle-content{
         font-size: 12px;
+        height: 110px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .arrow{
         width: 15px;

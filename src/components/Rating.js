@@ -1,3 +1,4 @@
+// Insertion des étoiles sur un tableau de 5 (max) //
 import fullStar from '../assets/fullStar.png'
 import emptyStar from '../assets/emptyStar.png'
 

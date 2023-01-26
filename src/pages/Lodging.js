@@ -7,7 +7,7 @@ import Error from './ErrorPage';
 import Carousel from '../components/Carousel';
 
 
-
+//  //
 export default function Lodging() {
     const { id } = useParams(window.location.href)
     const apt = Apts.find((object) => object.id === id)
@@ -36,11 +36,11 @@ export default function Lodging() {
             </div>
             <div className='card_content'>
                 <div className='card_content_right'>
-                    <ShowHide title="Description" content={ apt.description } />
+                    <ShowHide title="Description" content={<p className='lodging_content'>{apt.description}</p>}/>
                 </div>
                 <div className='card_content_left'>
                     <ShowHide title="Equipements" content={ apt.equipments.map((equipement, index) => {
-                        return (<div key={ index } className="equipement_list">{ equipement }</div>)
+                        return (<div key={ index } className="lodging_content">{ equipement }</div>)
                     })}/>                   
                 </div>
             </div>

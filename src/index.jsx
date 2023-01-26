@@ -8,17 +8,17 @@ import Lodging from './pages/Lodging';
 import About from './pages/About';
 import Error from './pages/ErrorPage'
 
-//router
+//layouts
+import HeaderLayout from './components/HeaderLayout';
+import FooterLayout from './components/FooterLayout';
+
+//router v6.4+
 import { 
   createBrowserRouter,
   Route,
   createRoutesFromElements,
   RouterProvider
 } from 'react-router-dom';
-
-//layouts
-import HeaderLayout from './components/HeaderLayout';
-import FooterLayout from './components/FooterLayout';
 
 
 const router = createBrowserRouter(
