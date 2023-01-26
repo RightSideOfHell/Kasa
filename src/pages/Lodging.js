@@ -2,7 +2,7 @@ import '../style/pages/Lodging.css'
 import { useParams } from 'react-router-dom';
 import Rating from '../components/Rating';
 import Apts from '../datas/Apts.json'
-import ShowHide from'../components/ToggleText'
+import ToggleText from'../components/ToggleText'
 import Error from './ErrorPage';
 import Carousel from '../components/Carousel';
 
@@ -36,10 +36,10 @@ export default function Lodging() {
             </div>
             <div className='card_content'>
                 <div className='card_content_right'>
-                    <ShowHide title="Description" content={<p className='lodging_content'>{apt.description}</p>}/>
+                    <ToggleText title="Description" content={<p className='lodging_content'>{apt.description}</p>}/>
                 </div>
                 <div className='card_content_left'>
-                    <ShowHide title="Equipements" content={ apt.equipments.map((equipement, index) => {
+                    <ToggleText title="Equipements" content={ apt.equipments.map((equipement, index) => {
                         return (<div key={ index } className="lodging_content">{ equipement }</div>)
                     })}/>                   
                 </div>

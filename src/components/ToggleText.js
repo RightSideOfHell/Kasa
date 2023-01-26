@@ -5,7 +5,7 @@ import upArrow from '../assets/upArrow.png'
 
 
 
-export default function ShowHide({ title, content }) {
+export default function ToggleText({ title, content }) {
     const [showText, setShowText] = useState(false);
 
     return(
