@@ -1,8 +1,8 @@
-// Insertion des étoiles sur un tableau de 5 (max) //
 import fullStar from '../assets/fullStar.png'
 import emptyStar from '../assets/emptyStar.png'
 
 
+// Insertion des étoiles sur un tableau de 5 (max) //
 export default function Rating({ratings}) {
     const range = [1, 2, 3, 4, 5];
 

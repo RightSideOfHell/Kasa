@@ -1,5 +1,5 @@
-import homeBanner from '../assets/homeBanner.png';
 import { Outlet } from 'react-router-dom';
+import homeBanner from '../assets/homeBanner.png';
 
 
 export default function HomeBannerLayout() {

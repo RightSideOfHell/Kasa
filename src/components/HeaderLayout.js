@@ -1,7 +1,7 @@
 // Outlet dit au rooter où mettre le reste du code
 import { NavLink, Outlet } from "react-router-dom";
-import logo from '../assets/logo.png'
 import '../style/components/header.css'
+import logo from '../assets/logo.png'
 
 
 export default function RootLayout() {

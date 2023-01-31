@@ -1,15 +1,15 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import '../style/components/carousel.css'
+import Apts from '../datas/Apts.json'
 import leftArrow from '../assets/leftArrow.png'
 import rightArrow from '../assets/rightArrow.png'
-import Apts from '../datas/Apts.json'
 
 export default function Carousel () {
 // ----------- Fetch les données de l'appartement -----------//
     const { id } = useParams(window.location.href)
     const apt = Apts.find((object) => object.id === id)
-// ---------------------------------------------------------//
+// ----------------------------------------------------------//
 
 // ------------------- Infinite carousel ------------------- //
     const picture = apt.pictures
@@ -33,8 +33,7 @@ export default function Carousel () {
                         ? "carousel_card carousel_card-active" 
                         : "carousel_card"
                         }>
-                        <img src={ picture } alt="carousel" className='carousel_pic'/>
-                        <div className='card_overlay'></div>
+                        <img src={ picture } alt="carousel" className='carousel_pic'/>               
                     </div>
                     }
                 )}

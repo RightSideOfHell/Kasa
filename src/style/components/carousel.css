@@ -32,10 +32,6 @@
     border-radius: 25px;
 }
 
-.card_overlay{
-    position: absolute;
-}
-
 .carousel_arrow_left,
 .carousel_arrow_right{
     position: absolute;

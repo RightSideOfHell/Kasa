@@ -1,17 +1,21 @@
-import '../style/pages/Lodging.css'
 import { useParams } from 'react-router-dom';
-import Rating from '../components/Rating';
+
 import Apts from '../datas/Apts.json'
-import ToggleText from'../components/ToggleText'
+import '../style/pages/Lodging.css'
 import Error from './ErrorPage';
+
+import Rating from '../components/Rating';
 import Carousel from '../components/Carousel';
+import ToggleText from'../components/ToggleText'
 
 
-//  //
+// ------------ Fetch les données de l'appartement ------------//
+// -- Retourne la page erreur si différent de l'id de l'apt -- //
 export default function Lodging() {
     const { id } = useParams(window.location.href)
     const apt = Apts.find((object) => object.id === id)
     if (!apt) return <Error />
+// ------------------------------------------------------------//
     const {rating} = apt
     
 
