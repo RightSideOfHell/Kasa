@@ -9,7 +9,7 @@ export default function Error() {
                 <p className="error-msg1">Oups! La page que&nbsp;</p>
                 <p className="error-msg2">vous demandez n'existe pas.</p>
             </div>
-            <Link to="/" className="error-link">Retourner sur la page d'accueil</Link>
+            <Link to="/Kasa" className="error-link">Retourner sur la page d'accueil</Link>
         </div>   
     )
 }

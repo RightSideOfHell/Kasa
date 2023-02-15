@@ -10,7 +10,7 @@ export default function RootLayout() {
             <header className="header-layout">
                 <img src={ logo } alt='logo Kasa' className="logo" />
                 <nav className="header-nav-bar">
-                    <NavLink to="/">Accueil</NavLink>
+                    <NavLink to="">Accueil</NavLink>
                     <NavLink to="about" className="aboutShrink">A Propos</NavLink>
                 </nav>
             </header>

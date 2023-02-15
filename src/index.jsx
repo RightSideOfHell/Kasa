@@ -24,7 +24,7 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-        <Route path ="/" element={<HeaderLayout />}>
+        <Route path="Kasa" element={<HeaderLayout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path='lodging/:id' element={<Lodging />} />
